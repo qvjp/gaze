@@ -35,7 +35,7 @@ func humaneBigBytes(s, base *big.Int, sizes []string) string {
 
 	var ret strings.Builder
 
-	for s.Cmp(big.NewInt(10)) > 0 {
+	for s.Cmp(big.NewInt(0)) > 0 {
 		c := (&big.Int{}).Set(s)
 		val, mag := oom(c, base, len(sizes)-1)
 		suffix := sizes[mag]

@@ -12,6 +12,8 @@ func TestIBytes(t *testing.T) {
 		{"0x10", "16 B"},
 		{"10", "10 B"},
 		{"0x1000", "4 KiB"},
+		{"0x10000", "64 KiB"},
+		{"0x10001", "64 KiB 1 B"},
 		{"0xC0000000", "3 GiB"},
 		{"0xFFFFFFFF", "3 GiB 1023 MiB 1023 KiB 1023 B"},
 		{"0x100000000", "4 GiB"},
